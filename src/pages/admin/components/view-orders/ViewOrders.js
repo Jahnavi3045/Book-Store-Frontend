@@ -12,7 +12,7 @@ function ViewOrders() {
         const response = await getOrders();
         if (response.status === 200) {
           console.log(response.data)
-          setOrders([response.data])
+          setOrders(response.data)
         }
       }
       catch (error) {
