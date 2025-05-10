@@ -12,7 +12,7 @@ function MyOrders() {
       const response = await getMyOrders();
       if (response.status === 200) {
         console.log(response.data)
-        setOrders([response.data])
+        setOrders(response.data)
       }
     }
     catch (error) {
